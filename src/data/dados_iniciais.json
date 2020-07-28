@@ -1,123 +1,152 @@
 {
   "categorias": [
     {
-      "titulo": "Front End",
-      "link": "https://www.alura.com.br/formacao-front-end",
-      "cor": "#6BD1FF",
+      "titulo": "NetFlix",
+      "link": "https://www.youtube.com/watch?v=7JyQqrMFLiY",
+      "cor": "#EA2027",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "url": "https://www.youtube.com/watch?v=7JyQqrMFLiY"
       },
       "videos": [
         {
-          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+          "titulo": "Os 7 MOMENTOS mais INCRÍVEIS de BREAKING BAD? ",
+          "url": "https://www.youtube.com/watch?v=c29L85KVtV0"
         },
         {
-          "titulo": "SEO com React",
-          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+          "titulo": "Jurassic World: Acampamento Jurássico",
+          "url": "https://www.youtube.com/watch?v=7JyQqrMFLiY"
         },
         {
-          "titulo": "Componentização com VanillaJS #AluraMais",
-          "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+          "titulo": "Thiago Ventura: Pokas melhores momentos",
+          "url": "https://www.youtube.com/watch?v=dIXpONYjWxg"
         },
         {
-          "titulo": "Pare de chutar e aprenda a display: inline #01",
-          "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+          "titulo": "The Crown - Trailer principal",
+          "url": "https://www.youtube.com/watch?v=dFZC-_T_irA"
         },
         {
-          "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
-          "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+          "titulo": "Como vender drogas online (rápido) | Trailer",
+          "url": "https://www.youtube.com/watch?v=jwiCmA5vX-A"
         },
         {
-          "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+          "titulo": "Arremesso Final | Anúncio de estreia",
+          "url": "https://www.youtube.com/watch?v=R4Te807Ky2o"
         },
         {
-          "titulo": "Novidades do Angular v9",
-          "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
+          "titulo": "The Midnight Gospel | Official Trailer",
+          "url": "https://www.youtube.com/watch?v=0kQWAqjFJS0"
         },
         {
-          "titulo": "Base para aprender os frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+          "titulo": "As Telefonistas / Trailer oficial / Só na Netflix",
+          "url": "https://www.youtube.com/watch?v=vtJ72tZ9H6A"
         }        
       ]
     },
     {
-      "titulo": "Back End",
-      "cor": "#00C86F",
+      "titulo": "Prime Video",
+      "cor": "#0f174e",
       "link_extra": {
-        "text": "Cursos de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-programacao"
+        "url": "https://www.youtube.com/watch?v=tcrNsIaQkb4"
       },
       "videos": [
         {
           "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-          "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+          "url": "https://www.youtube.com/watch?v=tcrNsIaQkb4"
         },
         {
-          "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-          "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+          "titulo": "The Boys - Final Trailer | Prime Video",
+          "url": "https://www.youtube.com/watch?v=tcrNsIaQkb4"
         },
         {
-          "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
-          "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+          "titulo": "Fleabag Season 2",
+          "url": "https://www.youtube.com/watch?v=aX2ViKQFL_k"
         },
         {
-          "titulo": "API: Dicionário do Programador",
-          "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
+          "titulo": "Tom Clancy's Jack Ryan Season 1",
+          "url": "https://www.youtube.com/watch?v=1KsyZF590NM"
         }, 
         {
-          "titulo": "Usando Git Direito",
-          "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+          "titulo": "Upload Trailer",
+          "url": "https://www.youtube.com/watch?v=0ZfZj2bn_xg"
+        },
+        {
+          "titulo": "Hunters - Official ",
+          "url": "https://www.youtube.com/watch?v=HBGkjmfIzAw"
+        },
+        {
+          "titulo": "Carnival Row Season 1",
+          "url": "https://www.youtube.com/watch?v=369LHB9N-Ro"
         }
       ]
     },
     {
-      "titulo": "Data Science e Inteligência Artificial",
-      "cor": "#9cd33b",
+      "titulo": "Globoplay",
+      "cor": "#e55039",
       "link_extra": {
-        "text": "Cursos de Data Science na Alura",
         "url": "https://www.alura.com.br/formacao-data-science"
       },
       "videos": [
         {
-          "titulo": "Teste de Turing",
-          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+          "titulo": "The Good Doctor - Season 1",
+          "url": "https://www.youtube.com/watch?v=BiOUFd7H69w"
         },
         {
-          "titulo": "O que é Data Science?",
-          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+          "titulo": "The Good Doctor - Season 1",
+          "url": "https://www.youtube.com/watch?v=BiOUFd7H69w"
         },
         {
-          "titulo": "Melhor forma de aprender Python",
-          "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+          "titulo": "The Big Bang Theory: Season 1",
+          "url": "https://www.youtube.com/watch?v=3g2yTcg1QFI"
         },
         {
-          "titulo": "Como ingressar no mercado de Data Science?",
-          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+          "titulo": "The Originals Season 1",
+          "url": "https://www.youtube.com/watch?v=GXrDYboUnnw"
+        },
+        {
+          "titulo": "The Mentalist (2008) - Official Trailer",
+          "url": "https://www.youtube.com/watch?v=tCpWApgVqbc"
+        },
+        {
+          "titulo": "Homeland Season 1",
+          "url": "https://www.youtube.com/watch?v=KyFmS3wRPCQ"
+        }, 
+        {
+          "titulo": "Supernatural Season 1",
+          "url": "https://www.youtube.com/watch?v=CX1Wn5zkfI8"
         }
       ]
     },
     {
-      "titulo": "Filmes",
-      "cor": "orange",
+      "titulo": "Spcineplay",
+      "cor": "#e61a74",
       "videos": [
         {
           "titulo": "Interestellar",
           "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
         },
         {
-          "titulo": "Gattaca",
-          "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+          "titulo": "Trailer de CARTOLA",
+          "url": "https://www.youtube.com/watch?v=iNz8M4VJ0hQ"
         },
         {
-          "titulo": "A Chegada",
-          "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+          "titulo": "GRETCHEN FILME ESTRADA - TRAILER",
+          "url": "https://www.youtube.com/watch?v=afvAilBYsUI"
         },
         {
-          "titulo": "Feitiço do Tempo",
-          "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+          "titulo": "jards macalé trailer",
+          "url": "https://www.youtube.com/watch?v=Yiah3rCneVc"
+        },
+        {
+          "titulo":"O Piano que Conversa",
+          "url": "https://www.youtube.com/watch?v=d16lhUgZW6A"
+        },
+        {
+          "titulo":"São Paulo em Hi-Fi",
+          "url":"https://www.youtube.com/watch?v=Ny98d_zkMVk"
+        },
+        {
+          "titulo":"Um Homem de Moral",
+          "url":"https://www.youtube.com/watch?v=8GQLpjf7GyA"
         }
       ]
     },
