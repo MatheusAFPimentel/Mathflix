@@ -3,7 +3,7 @@ import PageDefault from '../../../components/PageDefault'
 import { Link } from 'react-router-dom'
 import FormField from '../../../components/FormField'
 
-import { CategoryBase, ButtonBlue, ButtonCancel} from './styles'
+import { CategoryBase, ButtonBlue, ButtonCancel, Input} from './styles'
 
 function CadastroCategoria() {
 
@@ -33,15 +33,14 @@ function CadastroCategoria() {
 
 
         <PageDefault>
+            <CategoryBase>
             <h1> Cadastro de categoria: {nomeCategoria.nome} </h1>
-            
                 <form onSubmit={function handleSubmit(infosDoEvento) {
                     infosDoEvento.preventDefault()
                     setCategorias([...categorias, nomeCategoria])
 
                     setnomeCategoria(valoresIniciais)
                 }}>
-                    <CategoryBase>
                     <FormField
                         placeHolder={"Categoria"}
                         type="text"
@@ -49,7 +48,6 @@ function CadastroCategoria() {
                         value={nomeCategoria.nome}
                         onChange={handleChange}
                     />
-                    </CategoryBase>
                     <FormField
                         placeHolder={"Descrição"}
                         type="textarea"
@@ -57,7 +55,7 @@ function CadastroCategoria() {
                         value={nomeCategoria.descricao}
                         onChange={handleChange}
                     />
-                    <CategoryBase>
+                    
                     <label>Cor da categoria:</label>
                     <FormField
                         type="color"
@@ -65,12 +63,12 @@ function CadastroCategoria() {
                         value={nomeCategoria.cor}
                         onChange={handleChange}
                     />
-                    </CategoryBase>
                     <ButtonBlue> Salvar </ButtonBlue>
                     <Link to="/">
                     <ButtonCancel> Cancelar </ButtonCancel>
                     </Link>
                 </form>
+                </CategoryBase>
                 
             <ul>
                 {categorias.map((categoria, indice) => {
@@ -81,9 +79,6 @@ function CadastroCategoria() {
                     )
                 })}
             </ul>
-            <Link to="/">
-                Ir para Home
-            </Link>
         </PageDefault>
 
 

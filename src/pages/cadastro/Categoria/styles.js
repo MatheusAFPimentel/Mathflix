@@ -1,52 +1,49 @@
 import styled from 'styled-components'
 
 export const CategoryBase = styled.form`
-    margin-top: 1em;
-    display: block;
-    margin-bottom: 10px;
-    font-family: sans-serif;
+    width: 100%;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 11px
 `
 
-export const ButtonBlue = styled.button `
-    background-color: #0f84fa;
-    color: #fff;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 13px;
-    padding: .75rem 17.33333333px;
-    min-width: 98px;
-    min-height: 37px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    width: auto;
-    line-height: 1rem;
-    box-shadow: none;
-    position: relative;
-    box-sizing: border-box;
-    vertical-align: middle;
-    font-weight: 700;
-    letter-spacing: .025rem;
-    border-radius: 2px;
-    user-select: none;
-    text-align: center;
-    border: none;
-    -webkit-appearance: button;
-    text-transform: none;
-    overflow: visible;
-    margin-right: 14px;
+export const ButtonBlue = styled.button`
+ background-color: rgb(15, 132, 250);
+color: rgb(255, 255, 255);
+cursor: pointer;
+text-decoration: none;
+display: inline-block;
+font-size: 13px;
+padding: 0.75rem 1rem;
+min-width: 98px;
+min-height: 37px;
+width: auto;
+line-height: 1rem;
+box-shadow: none;
+position: relative;
+box-sizing: border-box;
+vertical-align: middle;
+font-weight: 700;
+letter-spacing: 0.025rem;
+border-radius: 2px;
+user-select: none;
+text-align: center;
+border: medium none;
+-moz-appearance: button;
+text-transform: none;
+overflow: visible;
+margin-right: 14px;
 `
-export const ButtonCancel = styled.button `
+
+export const ButtonCancel = styled.button`
     color: black;
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
     font-size: 13px;
-    padding: .75rem 17.33333333px;
+    padding: 0.75rem 1rem;
     min-width: 98px;
     min-height: 37px;
-    padding-left: 1rem;
-    padding-right: 1rem;
     width: auto;
     line-height: 1rem;
     box-shadow: none;
@@ -54,15 +51,17 @@ export const ButtonCancel = styled.button `
     box-sizing: border-box;
     vertical-align: middle;
     font-weight: 700;
-    letter-spacing: .025rem;
+    letter-spacing: 0.025rem;
     border-radius: 2px;
     user-select: none;
     text-align: center;
-    border: none;
-    -webkit-appearance: button;
+    border: medium none;
+    -moz-appearance: button;
     text-transform: none;
     overflow: visible;
+
 `
+
 
 
 

@@ -1,8 +1,8 @@
 import React from 'react'
-
+import './index.css';
 function FormField({placeHolder ,label, type, name, value, onChange}) {
     return (<div>
-        <input
+        <input className="estilo"
                 placeholder={placeHolder}
                 label={label}
                 type={type}
@@ -10,7 +10,6 @@ function FormField({placeHolder ,label, type, name, value, onChange}) {
                 name={name}
                 onChange={onChange}
             />
-        
     </div>)
 }
 
