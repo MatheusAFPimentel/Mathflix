@@ -33,6 +33,10 @@ border: medium none;
 text-transform: none;
 overflow: visible;
 margin-right: 14px;
+ &:hover,
+ &:focus {
+opacity: .6;
+}
 `
 
 export const ButtonCancel = styled.button`
@@ -59,9 +63,13 @@ export const ButtonCancel = styled.button`
     -moz-appearance: button;
     text-transform: none;
     overflow: visible;
-
+    &:hover,
+    &:focus {
+    opacity: .6;
+    color: red;
+  }
+}
 `
-
 
 
 
