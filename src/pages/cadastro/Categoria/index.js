@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import PageDefault from '../../../components/PageDefault'
 import { Link } from 'react-router-dom'
 import FormField from '../../../components/FormField'
@@ -8,8 +8,8 @@ import { CategoryBase, ButtonBlue, ButtonCancel, Input} from './styles'
 function CadastroCategoria() {
 
     const valoresIniciais = {
-        nome: '',
-        descricao: '',
+        nome: 'Nome',
+        descricao: 'Descrição',
         cor: ''
     }
     const [categorias, setCategorias] = useState([''])
@@ -29,6 +29,16 @@ function CadastroCategoria() {
             e.target.getAttribute('name'),
             e.target.value)
     }
+
+    useEffect(() => {
+        const URL = 'http://localhost:8080/categorias'
+        fetch(URL)
+        .then(async (request) => {
+           const response = await request.json()
+           setCategorias([...response])
+        })
+    }, [])
+
     return (
 
 
@@ -42,14 +52,12 @@ function CadastroCategoria() {
                     setnomeCategoria(valoresIniciais)
                 }}>
                     <FormField
-                        placeHolder={"Categoria"}
                         type="text"
                         name="nome"
                         value={nomeCategoria.nome}
                         onChange={handleChange}
                     />
                     <FormField
-                        placeHolder={"Descrição"}
                         type="textarea"
                         name="descricao"
                         value={nomeCategoria.descricao}

@@ -68,7 +68,7 @@ export const ButtonCancel = styled.button`
     opacity: .6;
     color: red;
   }
-}
+
 `
 
 

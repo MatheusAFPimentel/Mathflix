@@ -1,0 +1,17 @@
+{
+    "categorias": [
+        {
+         "id": "1",
+         "nome": "Telecine Play",
+         "categoria": "Series",
+         "cor": "#cbd1ff"   
+        }, 
+        {
+            "id": "2",
+            "nome": "Live FC",
+            "categoria": "Futebol",
+            "cor": "#cbd1ff"   
+           }
+       
+    ]
+}
