@@ -1,96 +1,119 @@
-import React, { useState, useEffect } from 'react'
-import PageDefault from '../../../components/PageDefault'
-import { Link } from 'react-router-dom'
-import FormField from '../../../components/FormField'
-
-import { CategoryBase, ButtonBlue, ButtonCancel, Input} from './styles'
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import PageDefault from '../../../components/PageDefault';
+import FormField from '../../../components/FormField';
+import Button from '../../../components/Button';
+import useForm from '../../../hooks/useForm';
 
 function CadastroCategoria() {
+  const valoresIniciais = {
+    nome: '',
+    descricao: '',
+    cor: '',
+  };
 
-    const valoresIniciais = {
-        nome: 'Nome',
-        descricao: 'Descrição',
-        cor: ''
-    }
-    const [categorias, setCategorias] = useState([''])
-    const [nomeCategoria, setnomeCategoria] = useState(valoresIniciais)
+  const { handleChange, values, clearForm } = useForm(valoresIniciais);
 
+  const [categorias, setCategorias] = useState([]);
 
-    function setValue(key, value) {
-        setnomeCategoria({
-            ...nomeCategoria,
-            [key]: value, // nome: 'valor'
-        })
-    }
+  useEffect(() => {
+    const URL_TOP = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categorias'
+      : 'https://devsoutinhoflix.herokuapp.com/categorias';
+    // E a ju ama variáveis
+    fetch(URL_TOP)
+      .then(async (respostaDoServidor) => {
+        const resposta = await respostaDoServidor.json();
+        setCategorias([
+          ...resposta,
+        ]);
+      });
 
-    function handleChange(e) {
-        const [getAttribute, value] = e.target.value
-        setValue(
-            e.target.getAttribute('name'),
-            e.target.value)
-    }
+    // setTimeout(() => {
+    //   setCategorias([
+    //     ...categorias,
+    //     {
+    //       id: 1,
+    //       nome: 'Front End',
+    //       descricao: 'Uma categoria bacanudassa',
+    //       cor: '#cbd1ff',
+    //     },
+    //     {
+    //       id: 2,
+    //       nome: 'Back End',
+    //       descricao: 'Outra categoria bacanudassa',
+    //       cor: '#cbd1ff',
+    //     },
+    //   ]);
+    // }, 4 * 1000);
+  }, []);
 
-    useEffect(() => {
-        const URL = 'http://localhost:8080/categorias'
-        fetch(URL)
-        .then(async (request) => {
-           const response = await request.json()
-           setCategorias([...response])
-        })
-    }, [])
+  return (
+    <PageDefault>
+      <h1>
+        Cadastro de Categoria:
+        {values.nome}
+      </h1>
 
-    return (
+      <form onSubmit={function handleSubmit(infosDoEvento) {
+        infosDoEvento.preventDefault();
+        setCategorias([
+          ...categorias,
+          values,
+        ]);
 
+        clearForm();
+      }}
+      >
 
-        <PageDefault>
-            <CategoryBase>
-            <h1> Cadastro de categoria: {nomeCategoria.nome} </h1>
-                <form onSubmit={function handleSubmit(infosDoEvento) {
-                    infosDoEvento.preventDefault()
-                    setCategorias([...categorias, nomeCategoria])
+        <FormField
+          label="Nome da Categoria"
+          name="nome"
+          value={values.nome}
+          onChange={handleChange}
+        />
 
-                    setnomeCategoria(valoresIniciais)
-                }}>
-                    <FormField
-                        type="text"
-                        name="nome"
-                        value={nomeCategoria.nome}
-                        onChange={handleChange}
-                    />
-                    <FormField
-                        type="textarea"
-                        name="descricao"
-                        value={nomeCategoria.descricao}
-                        onChange={handleChange}
-                    />
-                    
-                    <label>Cor da categoria:</label>
-                    <FormField
-                        type="color"
-                        name="cor"
-                        value={nomeCategoria.cor}
-                        onChange={handleChange}
-                    />
-                    <ButtonBlue> Salvar </ButtonBlue>
-                    <Link to="/">
-                    <ButtonCancel> Cancelar </ButtonCancel>
-                    </Link>
-                </form>
-                </CategoryBase>
-                
-            <ul>
-                {categorias.map((categoria, indice) => {
-                    return (
-                        <li key={`${categoria}${indice}`}>
-                            {categoria.nome}
-                        </li>
-                    )
-                })}
-            </ul>
-        </PageDefault>
+        <FormField
+          label="Descrição"
+          type="textarea"
+          name="descricao"
+          value={values.descricao}
+          onChange={handleChange}
+        />
 
+        <FormField
+          label="Cor"
+          type="color"
+          name="cor"
+          value={values.cor}
+          onChange={handleChange}
+        />
 
-    )
+        <Button>
+          Cadastrar
+        </Button>
+      </form>
+
+      {categorias.length === 0 && (
+        <div>
+          {/* Cargando... */}
+          Loading...
+        </div>
+      )}
+
+      <ul>
+        {categorias.map((categoria) => (
+          <li key={`${categoria.titulo}`}>
+            {categoria.titulo}
+          </li>
+        ))}
+      </ul>
+
+      <Link to="/">
+        Ir para home
+      </Link>
+    </PageDefault>
+  );
 }
 
-export default CadastroCategoria
+export default CadastroCategoria;

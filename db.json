@@ -1,17 +1,105 @@
 {
-    "categorias": [
-        {
-         "id": "1",
-         "nome": "Telecine Play",
-         "categoria": "Series",
-         "cor": "#cbd1ff"   
-        }, 
-        {
-            "id": "2",
-            "nome": "Live FC",
-            "categoria": "Futebol",
-            "cor": "#cbd1ff"   
-           }
-       
-    ]
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "NetFlix",
+      "cor": "#EA2027",
+      "link_extra": {
+        "text": "Ir para o site da plataforma",
+        "url": "https://www.netflix.com/"
+      }
+    },
+    {
+      "id": 2,
+      "titulo": "Prime Vídeo",
+      "cor": "#FFC312",
+      "link_extra": {
+        "text": "ir para o site da plataforma",
+        "url": "https://www.primevideo.com/"
+      }
+    },
+    {
+      "id": 3,
+      "titulo": "Globoplay",
+      "cor": "#EE5A24",
+      "link_extra": {
+        "text": "ir para o site da plataforma",
+        "url": "https://globoplay.globo.com/"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "titulo": "Catálogo de trailers",
+      "url": "https://www.youtube.com/watch?v=c29L85KVtV0",
+      "categoriaId": 1,
+      "id": 1
+    },
+    {
+      "titulo": "The umbrella academy",
+      "url": "https://www.youtube.com/watch?v=5_4SW8HHfUs",
+      "categoriaId": 1,
+      "id": 2
+    },
+    {
+      "titulo": "Como vender drogas online",
+      "url": "https://www.youtube.com/watch?v=jwiCmA5vX-A",
+      "categoriaId": 1,
+      "id": 3
+    },
+    {
+      "titulo": "Vis a Vis",
+      "url": "https://www.youtube.com/watch?v=N08KRAPzsHU",
+      "categoriaId": 1,
+      "id": 4
+    },
+    {
+      "titulo": "The Boys",
+      "url": "https://www.youtube.com/watch?v=tcrNsIaQkb4",
+      "categoriaId": 2,
+      "id": 5
+    },
+    {
+      "titulo": "Tom Clancy's Jack Ryan",
+      "url": "https://www.youtube.com/watch?v=1KsyZF590NM",
+      "categoriaId": 2,
+      "id": 6
+    },
+    {
+      "titulo": "Hanna",
+      "url": "https://www.youtube.com/watch?v=QE3v73d_Zks",
+      "categoriaId": 2,
+      "id": 7
+    },
+    {
+      "titulo": "Homeland",
+      "url": "https://www.youtube.com/watch?v=KyFmS3wRPCQ",
+      "categoriaId": 3,
+      "id": 8
+    },
+    {
+      "titulo": "O mentalista",
+      "url": "https://www.youtube.com/watch?v=tCpWApgVqbc",
+      "categoriaId": 3,
+      "id": 9
+    },
+    {
+      "titulo": "Dexter",
+      "url": "https://www.youtube.com/watch?v=YQeUmSD1c3g",
+      "categoriaId": 3,
+      "id": 10
+    },
+    {
+      "titulo": "Mundo mistério",
+      "url": "https://www.youtube.com/watch?v=McpTUhgXNaE",
+      "categoriaId": 1,
+      "id": 11
+    },
+    {
+      "titulo": "Ratched",
+      "url": "https://www.youtube.com/watch?v=eE8HtX0GwfI",
+      "categoriaId": 1,
+      "id": 12
+    }
+  ]
 }
